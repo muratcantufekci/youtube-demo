@@ -7,7 +7,6 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import AddTaskOutlinedIcon from "@mui/icons-material/AddTaskOutlined";
 import Comments from "../components/Comments";
-import Card from "../components/Card";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -158,6 +157,7 @@ const Video = () => {
   }
 
   return (
+    currentVideo &&
     <Container>
       <Content>
         <VideoWrapper>
